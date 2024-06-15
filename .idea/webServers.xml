@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="39eeff5d-a139-412f-ba92-dbd0a4b98753" name="a.amkamdam.com" url="https://a.amkamdam.com/">
+        <fileTransfer accessType="SFTP" host="82.165.5.243" port="22" sshConfigId="71ec83c7-7e21-4982-ae17-b10a384dbc1c" sshConfig="al@82.165.5.243:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

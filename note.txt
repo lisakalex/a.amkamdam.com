@@ -1,0 +1,54 @@
+https://www.prezzybox.com
+https://prezzybox.com
+prezzybox.com
+www.prezzybox.com
+
+~~~
+a recursive find/replace of a string
+https://stackoverflow.com/questions/1583219/how-can-i-do-a-recursive-find-replace-of-a-string-with-awk-or-sed
+
+grep -rl oldtext . | xargs sed -i 's/oldtext/newtext/g'
+grep -rl https://www.prezzybox.com . | xargs sed -i 's/https://www.prezzybox.com/''/g'
+
+grep -Rnw '/var/www/kak' -e 'https://www.prezzybox.com/'
+
+find /home/www/ -type f -exec sed -i 's/subdomainA\.example\.com/subdomainB.example.com/g' {} +
+find /var/www/a.amkamdam.com/html/ -type f -exec sed -i 's/https:\/\/www\.prezzybox\.com/subdomainB.example.com/g' {} +
+find /var/www/a.amkamdam.com/html/ -type f -exec sed -i 's/subdomainB\.example\.com//g' {} +
+
+~~~
+count all words Recursively (Grep Recursive and Count)
+https://stackoverflow.com/questions/884591/grep-recursive-and-count
+
+grep -roh "https://cryptonews.com" | grep -v "^Binary.*matches$" | grep -c ^
+grep -roh "https://www.prezzybox.com" | grep -v "^Binary.*matches$" | grep -c ^
+
+884393
+
+~~~
+/etc/apache2/sites-available/
+
+ErrorDocument 404 /error.aspx
+/var/www/a.amkamdam.com/html/about/about-us.aspx
+
+~~~
+https://stackoverflow.com/questions/2212643/python-recursive-folder-read
+# python copy files recursively to one directory
+# https://note.nkmk.me/en/python-shutil-copy-copytree/#without-preserving-the-original-directory-structure
+for p in glob2.iglob('/home/al/kak/**/*.js', recursive=True):
+    if os.path.isfile(p):
+        shutil.copy(p, '/home/al/js')
+
+~~~
+    for currentpath, folders, files in os.walk('html/about1'):
+        for file in files:
+            if '.jpg' not in file:
+                print(os.path.join(currentpath, file))
+                ku = (os.path.join(currentpath, file))
+                with open(ku) as file1:
+                    read_file = file1.read()
+                    read_file = decompose_tags(read_file)
+                    count_replace = count_replace + 1
+                with open(ku, "w") as file:
+                    file.write(read_file)
+
