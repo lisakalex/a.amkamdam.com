@@ -38,7 +38,7 @@ https://stackoverflow.com/questions/2212643/python-recursive-folder-read
 for p in glob2.iglob('/home/al/kak/**/*.js', recursive=True):
     if os.path.isfile(p):
         shutil.copy(p, '/home/al/js')
-
+.
 ~~~
     for currentpath, folders, files in os.walk('html/about1'):
         for file in files:
